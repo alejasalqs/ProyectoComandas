@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54A43B21-1D77-48EB-9D23-BEBB1252FC75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoComandas</RootNamespace>
+    <AssemblyName>ProyectoComandas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="SeleccionarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarMesa.Designer.cs">
+      <DependentUpon>SeleccionarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminOrdenes.Designer.cs">
+      <DependentUpon>AdminOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminClientes.Designer.cs">
+      <DependentUpon>AdminClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminMeseros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Administrador\AdminMeseros.Designer.cs">
+      <DependentUpon>AdminMeseros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Administrador\Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Administrador\Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Usuarios\pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Usuarios\pedido.Designer.cs">
+      <DependentUpon>pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conexion.cs" />
+    <Compile Include="Vistas Usuarios\ControlOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Usuarios\ControlOrdenes.Designer.cs">
+      <DependentUpon>ControlOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Administrador\InicioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Administrador\InicioAdmin.Designer.cs">
+      <DependentUpon>InicioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdministrador.Designer.cs">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas Usuarios\Meseros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Usuarios\Meseros.Designer.cs">
+      <DependentUpon>Meseros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerForm.Designer.cs">
+      <DependentUpon>PrimerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas Usuarios\RegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas Usuarios\RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SeleccionarMesa.resx">
+      <DependentUpon>SeleccionarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Administrador\AdminClientes.resx">
+      <DependentUpon>AdminClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Administrador\AdminMeseros.resx">
+      <DependentUpon>AdminMeseros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAdministrador.resx">
+      <DependentUpon>InicioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Administrador\Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Usuarios\ControlOrdenes.resx">
+      <DependentUpon>ControlOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Administrador\InicioAdmin.resx">
+      <DependentUpon>InicioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerForm.resx">
+      <DependentUpon>PrimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas Usuarios\pedido.resx">
+      <DependentUpon>pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas Usuarios\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
